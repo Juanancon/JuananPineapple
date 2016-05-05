@@ -34,16 +34,13 @@ namespace DrinkinGame
 
         private void BOTONGIRO_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = true;  
+            timer1.Enabled = true;
+            timer2.Enabled = true;
                 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-
-
-
             flechas[m].Visible = false;
             flechas[n].Visible = true;
             m = n;
@@ -51,11 +48,12 @@ namespace DrinkinGame
             while (n == m)
             {
                 n = n1.Next(0, 8);
-            };
-            
-            
-            
-            
+            };   
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
         }
     }
 }
