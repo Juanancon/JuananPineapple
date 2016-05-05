@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pic5 = new System.Windows.Forms.PictureBox();
             this.pic1 = new System.Windows.Forms.PictureBox();
@@ -38,6 +39,7 @@
             this.pic2 = new System.Windows.Forms.PictureBox();
             this.pic8 = new System.Windows.Forms.PictureBox();
             this.BOTONGIRO = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pic5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic6)).BeginInit();
@@ -56,6 +58,7 @@
             this.pic5.Size = new System.Drawing.Size(103, 105);
             this.pic5.TabIndex = 1;
             this.pic5.TabStop = false;
+            this.pic5.Visible = false;
             // 
             // pic1
             // 
@@ -65,6 +68,7 @@
             this.pic1.Size = new System.Drawing.Size(103, 105);
             this.pic1.TabIndex = 2;
             this.pic1.TabStop = false;
+            this.pic1.Visible = false;
             // 
             // pic6
             // 
@@ -74,6 +78,7 @@
             this.pic6.Size = new System.Drawing.Size(103, 105);
             this.pic6.TabIndex = 3;
             this.pic6.TabStop = false;
+            this.pic6.Visible = false;
             // 
             // pic3
             // 
@@ -83,6 +88,7 @@
             this.pic3.Size = new System.Drawing.Size(103, 105);
             this.pic3.TabIndex = 4;
             this.pic3.TabStop = false;
+            this.pic3.Visible = false;
             // 
             // pic4
             // 
@@ -92,6 +98,7 @@
             this.pic4.Size = new System.Drawing.Size(103, 105);
             this.pic4.TabIndex = 6;
             this.pic4.TabStop = false;
+            this.pic4.Visible = false;
             // 
             // pic7
             // 
@@ -101,6 +108,7 @@
             this.pic7.Size = new System.Drawing.Size(103, 105);
             this.pic7.TabIndex = 7;
             this.pic7.TabStop = false;
+            this.pic7.Visible = false;
             // 
             // pic2
             // 
@@ -110,6 +118,7 @@
             this.pic2.Size = new System.Drawing.Size(103, 105);
             this.pic2.TabIndex = 8;
             this.pic2.TabStop = false;
+            this.pic2.Visible = false;
             // 
             // pic8
             // 
@@ -119,6 +128,7 @@
             this.pic8.Size = new System.Drawing.Size(103, 105);
             this.pic8.TabIndex = 9;
             this.pic8.TabStop = false;
+            this.pic8.Visible = false;
             // 
             // BOTONGIRO
             // 
@@ -130,6 +140,12 @@
             this.BOTONGIRO.TabIndex = 10;
             this.BOTONGIRO.Text = "GIRAR!!!";
             this.BOTONGIRO.UseVisualStyleBackColor = true;
+            this.BOTONGIRO.Click += new System.EventHandler(this.BOTONGIRO_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 300;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -170,6 +186,7 @@
         private System.Windows.Forms.PictureBox pic2;
         private System.Windows.Forms.PictureBox pic8;
         private System.Windows.Forms.Button BOTONGIRO;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
